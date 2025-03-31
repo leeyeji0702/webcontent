@@ -89,8 +89,48 @@
     </tbody>
 </table>
 </section>
+<section id="survey">
+    <h3>설문지</h3>
+    <hr>
+    <a href="#survey-form.html" id="survey-form">설문 참여하기</a>
+    <details id="survey-form">
+        <summary>설문조사</summary>
+        <form action="submit.php" method="post">
+            <p><strong>소프트웨어 기술에 대한 의견을 듣습니다.</strong></p>
+            <br><hr>
+            <p>학년:</p>
+            1학년<input type="radio" name="grade" value="1">
+            2학년<input type="radio" name="grade" value="2">
+            3학년<input type="radio" name="grade" value="3">
+            4학년<input type="radio" name="grade" value="4">
+            <br><br>
+            <p>성별:</p>
+            남자<input type="radio" name="gender" value="1">
+            여자<input type="radio" name="gender" value="2">
+            <br><br>
+            <label for="interest">관심분야:</label>
+            <select name="software">
+                <optain value="1">인공지능</optain>
+                <option value="2">사물인터넷</option>
+                <option value="3">양자컴퓨터</option>
+            </select>
+            <br><br>
+            <p>진로:</p>
+            개발<input type="checkbox" value="1">
+            기획<input type="checkbox" value="2">
+            영업<input type="checkbox" value="3">
+            창업<input type="checkbox" value="4">
+            <br><br>
+            <label for="feedback">남기고 싶은 말:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="의견을 남겨주세요."></textarea>
+            <br><br>
+            <input type="submit" value="제출">
+        </form> 
+    </details>
+</section>
 </main>
 <footer>
     <p>사진출처: <a href="https://www.naver.com" target="_blank">네이버</a></p>
 </footer>
 </body>
+</html>
